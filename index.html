@@ -6,42 +6,57 @@
     <title>Jaspreet S. Saini - CV</title>
     <style>
         body { 
-            font-family: Arial, sans-serif; 
+            font-family: 'Arial', sans-serif; 
             margin: 0; 
-            padding: 20px; 
-            background-color: #E0F7FA; 
-            color: #004D40; 
+            padding: 0; 
+            background-color: #f4f4f9; 
+            color: #333; 
         }
         header { 
             text-align: center; 
-            margin-bottom: 40px; 
-            background-color: #00BCD4; 
+            padding: 50px 20px; 
+            background-color: #2C3E50; 
             color: white; 
-            padding: 20px; 
-            border-radius: 8px;
+            border-bottom: 5px solid #2980B9; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5em; 
+        }
+        header p { 
+            margin: 5px 0; 
+            font-size: 1.1em; 
         }
         section { 
-            margin-bottom: 40px; 
-            background-color: white; 
+            margin: 20px auto; 
             padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            max-width: 800px; 
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
-        h1, h2, h3 { 
-            color: #00796B; 
-        }
-        p { 
-            color: #004D40; 
+        section h2 { 
+            border-bottom: 2px solid #2980B9; 
+            padding-bottom: 5px; 
+            color: #2C3E50; 
         }
         .contact-info, .languages, .awards { 
             display: flex; 
             justify-content: space-between; 
+            flex-wrap: wrap; 
         }
         .contact-info div, .languages div, .awards div { 
             flex: 1; 
+            padding: 5px 10px; 
         }
-        .contact-info div, .languages div, .awards div { 
-            padding: 0 10px; 
+        .contact-info div p, .languages div p, .awards div p { 
+            margin: 5px 0; 
+        }
+        h3 {
+            color: #2980B9;
+        }
+        p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -49,22 +64,13 @@
 
 <header>
     <h1>Jaspreet S. Saini</h1>
-    <div class="contact-info">
-        <div>
-            <p>Route de troinex 2, Geneva, 1227, CH</p>
-        </div>
-        <div>
-            <p>Phone: +41787282117</p>
-        </div>
-        <div>
-            <p>Email: jaspreet.saini@epfl.ch</p>
-        </div>
-    </div>
+    <p>Route de Troinex 2, Geneva, 1227, CH</p>
+    <p>Phone: +41787282117 | Email: jaspreet.saini@epfl.ch</p>
 </header>
 
 <section>
     <h2>About Me</h2>
-    <p>Five years+ in microbial omics, specializing in bioinformatics workflows of genome-resolved meta-genomics/transcriptomics.</p>
+    <p>With over five years of experience in microbial omics, I specialize in bioinformatics workflows for genome-resolved meta-genomics and transcriptomics.</p>
 </section>
 
 <section>
@@ -81,11 +87,11 @@
 
     <h3>Molecular Microbiologist, University of Geneva</h3>
     <p>September 2017 - August 2022 (5 years), Geneva, Switzerland</p>
-    <p>Investigated diverse microbial guilds including viruses, bacteria, and microbial eukaryotes. Metagenomics with Illumina short-read and Pacbio long-read. Metatranscriptomics to study gene expression and activity.</p>
+    <p>Investigated diverse microbial guilds including viruses, bacteria, and microbial eukaryotes. Conducted metagenomics with Illumina short-read and Pacbio long-read technologies and metatranscriptomics to study gene expression and activity.</p>
 
     <h3>Guest Scholar, University of Michigan</h3>
     <p>August - December 2018 (6 Months), Michigan, US</p>
-    <p>R-pipeline to study bacteria using high-throughput amplicon gene sequencing.</p>
+    <p>Developed an R-pipeline to study bacteria using high-throughput amplicon gene sequencing.</p>
 </section>
 
 <section>
