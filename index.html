@@ -3,151 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaspreet S. Saini - CV</title>
+    <title>Dr. Jaspreet S. Saini</title>
     <style>
-        body { 
-            font-family: 'Arial', sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f9; 
-            color: #333; 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        header { 
-            text-align: center; 
-            padding: 50px 20px; 
-            background-color: #2C3E50; 
-            color: white; 
-            border-bottom: 5px solid #2980B9; 
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
         }
-        header h1 { 
-            margin: 0; 
-            font-size: 2.5em; 
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
-        header p { 
-            margin: 5px 0; 
-            font-size: 1.1em; 
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
-        section { 
-            margin: 20px auto; 
-            padding: 20px; 
-            max-width: 800px; 
-            background-color: white; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
         }
-        section h2 { 
-            border-bottom: 2px solid #2980B9; 
-            padding-bottom: 5px; 
-            color: #2C3E50; 
+        header li {
+            display: inline;
+            margin: 0 15px;
         }
-        .contact-info, .languages, .awards { 
-            display: flex; 
-            justify-content: space-between; 
-            flex-wrap: wrap; 
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
         }
-        .contact-info div, .languages div, .awards div { 
-            flex: 1; 
-            padding: 5px 10px; 
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
         }
-        .contact-info div p, .languages div p, .awards div p { 
-            margin: 5px 0; 
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
         }
-        h3 {
-            color: #2980B9;
+        .profile-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        p {
-            margin-bottom: 10px;
+        .profile-links a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #007bff;
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            header ul {
+                text-align: right;
+            }
+            header li {
+                margin: 0 10px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                width: 70%;
+            }
+            header h1 {
+                font-size: 3em;
+            }
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Jaspreet S. Saini</h1>
-    <p>Route de Troinex 2, Geneva, 1227, CH</p>
-    <p>Phone: +41787282117 | Email: jaspreet.saini@epfl.ch</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>With over five years of experience in microbial omics, I specialize in bioinformatics workflows for genome-resolved meta-genomics and transcriptomics.</p>
-</section>
-
-<section>
-    <h2>Education</h2>
-    <p><strong>PhD in Microbial Evolution and Genomics</strong>, University of Geneva, Switzerland (2022)</p>
-    <p><strong>MSc in Molecular Cell Biology</strong>, Nottingham Trent University, United Kingdom (2016)</p>
-    <p><strong>B.Tech in Biotechnology</strong>, Sharda University, India (2013)</p>
-</section>
-
-<section>
-    <h2>Experience</h2>
-    <h3>Bioinformatician, École polytechnique fédérale de Lausanne</h3>
-    <p>September 2022 - Present, Lausanne, Vaud, Switzerland</p>
-
-    <h3>Molecular Microbiologist, University of Geneva</h3>
-    <p>September 2017 - August 2022 (5 years), Geneva, Switzerland</p>
-    <p>Investigated diverse microbial guilds including viruses, bacteria, and microbial eukaryotes. Conducted metagenomics with Illumina short-read and Pacbio long-read technologies and metatranscriptomics to study gene expression and activity.</p>
-
-    <h3>Guest Scholar, University of Michigan</h3>
-    <p>August - December 2018 (6 Months), Michigan, US</p>
-    <p>Developed an R-pipeline to study bacteria using high-throughput amplicon gene sequencing.</p>
-</section>
-
-<section>
-    <h2>Expertise</h2>
-    <p><strong>Wet-lab:</strong> DNA & RNA Extraction, Quantitative PCR, Flow-cytometry cell counts, Phage culturing, Bacterial culturing</p>
-    <p><strong>Bioinformatics:</strong> Flow-cytometry phenotypes, Genome Binning, Taxonomic Classifications, Gene Predictions, 16S Genotypic Assessment, Functional annotations, Phylogenomics, Genome quality</p>
-    <p><strong>Programming:</strong> R, Bash scripting</p>
-</section>
-
-<section>
-    <h2>Languages</h2>
-    <div class="languages">
-        <div>
-            <p>English</p>
+    <header>
+        <div class="container">
+            <h1>Dr. Jaspreet S. Saini</h1>
+            <ul>
+                <li><a href="https://scholar.google.com/citations?user=1sfidJwAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/jaspreet-s-saini-b69989b0/" target="_blank">LinkedIn</a></li>
+            </ul>
         </div>
-        <div>
-            <p>Punjabi</p>
-        </div>
-        <div>
-            <p>French (A1-A2)</p>
-        </div>
-        <div>
-            <p>Hindi</p>
-        </div>
+    </header>
+
+    <div class="container main">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Dr. Jaspreet S. Saini is an accomplished bioinformatician and microbial genomics expert with extensive experience in metagenomics and metatranscriptomics. He holds a Ph.D. in Environmental Microbiology from the University of Geneva, supported by a Swiss Government Excellence Scholarship. Currently, he is a scientific collaborator at the École Polytechnique Fédérale de Lausanne (EPFL) and a member of the NCCR microbial consortium in Switzerland.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Ph.D. in Environmental Microbiology, University of Geneva, Switzerland (2022)</li>
+                <li>M.Sc. in Molecular Cell Biology, Nottingham Trent University, United Kingdom (2016)</li>
+                <li>B.Tech in Biotechnology, Sharda University, India (2013)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li>Bioinformatician, EPFL (Sep 2022 - Present)</li>
+                <li>Molecular Microbiologist, University of Geneva (Sep 2017 - Aug 2022)</li>
+                <li>Guest Scholar, University of Michigan (Aug - Dec 2018)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills and Expertise</h2>
+            <ul>
+                <li>Bioinformatics: Genome binning, taxonomic classifications, gene predictions, functional annotations, phylogenomics, genome quality assessments</li>
+                <li>Laboratory Techniques: DNA & RNA extraction, quantitative PCR, flow-cytometry, phage and bacterial culturing</li>
+                <li>Programming and Data Analysis: Proficient in R and Bash scripting</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Key Publications</h2>
+            <ul>
+                <li>Microbial Genome Collection of Aerobic Granular Sludge (2024) - ASM MRA</li>
+                <li>Benchmarking Informatics Approaches for Virus Discovery (2024) - ASM mSystems</li>
+                <li>Genomic Insights into Microbial Coupling in Lake Cadagno (2023) - ISME Journal</li>
+                <li>Microbial and Viral Distributions in Lake Cadagno (2022) - ASM mBio</li>
+                <li>Upcoming Publication on Phosphate-Accumulating Organisms in Aerobic Granular Sludge Reactors</li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Awarded prestigious Swiss Government Excellence Scholarship for Ph.D. studies</li>
+                <li>Published multiple first-author papers in renowned journals such as ASM mBio and ISME Journal</li>
+                <li>Extensive experience across three countries: India, UK, and Switzerland</li>
+                <li>Active collaboration with international research projects, including the Dynamics of Microbiomes in Space (DynaMos) project with NASA</li>
+            </ul>
+        </section>
+
+        <section id="contributions">
+            <h2>Contributions and Future Goals</h2>
+            <p>Led significant research projects highlighting Switzerland's contributions to microbial ecology. Proactively integrated into Swiss society by learning French and participating in collaborative projects. Aspires to secure a faculty position at the University of Geneva's Center for the Origin and Prevalence of Life.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Laboratory for Environmental Biotechnology<br>
+            École Polytechnique Fédérale de Lausanne (EPFL), Switzerland<br>
+            EPFL ENAC IIE LBE<br>
+            CH B2 408 (Bâtiment CH)<br>
+            Station 6<br>
+            1015 Lausanne<br><br>
+            You can reach me via email at <a href="mailto:jaspreet.saini@epfl.ch">jaspreet.saini@epfl.ch</a> or connect with me on <a href="https://www.linkedin.com/in/jaspreet-s-saini-b69989b0/" target="_blank">LinkedIn</a> and <a href="https://scholar.google.com/citations?user=1sfidJwAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
+        </section>
     </div>
-</section>
 
-<section>
-    <h2>Awards</h2>
-    <div class="awards">
-        <div>
-            <p>Swiss Government Excellence Scholarship, PhD</p>
-        </div>
-        <div>
-            <p>International Scholarship, MSc</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2>Key Publications</h2>
-    <p>Genomic insights into the coupling of a Chlorella-like microeukaryote and sulfur bacteria in the chemocline of permanently stratified Lake Cadagno, ISMEJ, Jaspreet S. Saini et al (2023)</p>
-    <p>Benchmarking combined informatics approaches for virus discovery: Caution is needed when combining in silico identification methods, BioXirv (2023)</p>
-</section>
-
-<section>
-    <h2>Conferences</h2>
-    <p>Annual Meeting and Assembly Swiss Society for Microbiology (SSM), 30-31 August 2023, Switzerland</p>
-    <p>18th International Symposium on Microbial Ecology, 14-19 August, Lausanne, Switzerland</p>
-    <p>Scientific Committee on Antarctic Research SCAR, Polar 18, 15-18 June, Davos, Switzerland</p>
-</section>
-
-<section>
-    <h2>References</h2>
-    <p>Available if requested.</p>
-</section>
-
+    <footer>
+        <p>&copy; 2024 Dr. Jaspreet S. Saini. All rights reserved.</p>
+    </footer>
 </body>
 </html>
