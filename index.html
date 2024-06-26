@@ -6,27 +6,30 @@
     <title>Dr. Jaspreet S. Saini</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
             color: #333;
+            transition: all 0.5s ease;
         }
         .container {
             width: 90%;
             margin: auto;
             overflow: hidden;
+            padding: 20px;
+            transition: all 0.5s ease;
         }
         header {
-            background: #333;
+            background: #4CAF50;
             color: #fff;
             padding: 20px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            animation: fadeInDown 2s;
         }
         header ul {
             padding: 0;
@@ -41,37 +44,60 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        header a:hover {
+            color: #ffeb3b;
         }
         .main {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
             border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 1.5s;
+        }
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s;
         }
         footer {
-            background: #333;
+            background: #4CAF50;
             color: #fff;
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
         }
         .profile-links a {
-            color: #007bff;
+            color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
         .profile-links a:hover {
-            text-decoration: underline;
+            color: #ffeb3b;
         }
         h2 {
-            color: #007bff;
+            color: #4CAF50;
+            animation: fadeIn 1.5s;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
         }
         @media (min-width: 768px) {
             .container {
                 width: 80%;
             }
             header h1 {
-                font-size: 2.5em;
+                font-size: 3em;
             }
             header ul {
                 text-align: right;
@@ -85,7 +111,35 @@
                 width: 70%;
             }
             header h1 {
-                font-size: 3em;
+                font-size: 3.5em;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
@@ -102,6 +156,9 @@
     </header>
 
     <div class="container main">
+        <div class="profile-pic">
+            <img src="WhatsApp Image 2024-06-26 at 09.52.24.jpeg" alt="Dr. Jaspreet S. Saini">
+        </div>
         <section id="about">
             <h2>About Me</h2>
             <p>Dr. Jaspreet S. Saini is an accomplished bioinformatician and microbial genomics expert with extensive experience in metagenomics and metatranscriptomics. He holds a Ph.D. in Environmental Microbiology from the University of Geneva, supported by a Swiss Government Excellence Scholarship. Currently, he is a scientific collaborator at the École Polytechnique Fédérale de Lausanne (EPFL) and a member of the NCCR microbial consortium in Switzerland.</p>
@@ -168,12 +225,4 @@
             CH B2 408 (Bâtiment CH)<br>
             Station 6<br>
             1015 Lausanne<br><br>
-            You can reach me via email at <a href="mailto:jaspreet.saini@epfl.ch">jaspreet.saini@epfl.ch</a> or connect with me on <a href="https://www.linkedin.com/in/jaspreet-s-saini-b69989b0/" target="_blank">LinkedIn</a> and <a href="https://scholar.google.com/citations?user=1sfidJwAAAAJ&hl=en" target="_blank">Google Scholar</a>.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Dr. Jaspreet S. Saini. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            You can reach me via email at <a href="mailto:jaspreet.saini@epfl.ch">jaspreet.saini@epfl.ch</a> or connect with me on <a href="https://www.linkedin.com/in/jaspreet-s-saini-b69989b0/" target="_blank">LinkedIn</a> and <a href="https://scholar.google.com
